@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+         crossorigin="anonymous"
+      />
 </head>
 <body>
+  <button onclick="leave()">leave</button>
+
+    for
+
   <?php
 
   include("firstFunction.php");
@@ -45,13 +55,24 @@
   }else{
     echo "no lo son <br>";
   }
-  ?>
 
+
+
+  // how to define a const
+  define('MYNAME', 'Juanitojose');
+  echo (MYNAME);
+  echo ("Mi nombre es : ".MYNAME);
+  // echo ("La ruta es : ".__DIR__);
+  
+  ?>
+  <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+         crossorigin="anonymous"
+      ></script>
   <script>
-    window.onload= ()=>{
-      setTimeout(function(){
-        window.location.href = "trabajo_operadores.php";
-      }, 3000); // 3000ms = 3 sec
+    function leave(){
+      window.location.href = "trabajo_operadores.php";
     }
   </script>
 </body>
