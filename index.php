@@ -9,9 +9,34 @@
       />
 </head>
 <body>
+
+  <form action="operacion.php" method="post">
+    <div class="mb-3">
+      <div class="mb-3">
+        <label for="operation" class="form-label">Opertion</label>
+        <select class="form-select form-select-lg" name="operation" id="operation">
+          <option selected value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+      </div>
+      <input type="number" name="operation" id="operation">
+    </div>
+    <div class="mb-3">
+      <label for="a" class="form-label" id="a">Numer a</label>
+      <input type="number" name="a" id="a">
+      <label for="b" class="form-label" id="b">Numer b</label>
+      <input type="number" name="b" id="b">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  <h2 id="answer" class="pb-5">
+    --
+  </h2>
+
   <button onclick="leave()">leave</button>
 
-    for
 
   <?php
 
