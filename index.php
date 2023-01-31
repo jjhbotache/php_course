@@ -10,33 +10,11 @@
 </head>
 <body>
 
-  <form action="operacion.php" method="post">
-    <div class="mb-3">
-      <div class="mb-3">
-        <label for="operation" class="form-label">Opertion</label>
-        <select class="form-select form-select-lg" name="operation" id="operation">
-          <option selected value="+">+</option>
-          <option value="-">-</option>
-          <option value="*">*</option>
-          <option value="/">/</option>
-        </select>
-      </div>
-      <input type="number" name="operation" id="operation">
-    </div>
-    <div class="mb-3">
-      <label for="a" class="form-label" id="a">Numer a</label>
-      <input type="number" name="a" id="a">
-      <label for="b" class="form-label" id="b">Numer b</label>
-      <input type="number" name="b" id="b">
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </div>
-  </form>
-  <h2 id="answer" class="pb-5">
-    --
-  </h2>
+  
 
-  <button onclick="leave()">leave</button>
-
+  
+  <button onclick="leave()" class="my-2 btn btn-primary" type="button">leave</button></br>
+  <button onclick="operationsExercise()" class="my-2 btn btn-primary" type="button">Go to the operations exercise</button></br>
 
   <?php
 
@@ -89,6 +67,8 @@
   echo ("Mi nombre es : ".MYNAME);
   // echo ("La ruta es : ".__DIR__);
   
+  $rand_number = rand(1, 2);
+  echo ("el numero random es $rand_number");
   ?>
   <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -98,6 +78,9 @@
   <script>
     function leave(){
       window.location.href = "trabajo_operadores.php";
+    }
+    function operationsExercise(){
+      window.location.href = "operationsExercise.php";
     }
   </script>
 </body>
