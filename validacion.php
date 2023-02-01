@@ -1,20 +1,14 @@
 <?php
-  if (isset($_POST["enviando"])) {
-    // print_r($_POST);
-
-    $user=$_POST["nombre_usuario"];
-    $age=$_POST["edad_usuario"];
-    echo $user;
-    
-    if ($user=="Juanito") {
-    echo "hola juanito :3 <br>";
-    }else {
-      echo "sacate la monda<br>";
-    }
-
-    if (($user=="Juanito")&&($age>=18)) {
-      echo("Tas grande :') <br>");
-    }
+if (isset($_POST["enviando"])) {
+  $age = $_POST["edad_usuario"];
+  if ($age <= 18) {
+    echo "Eres menor de edad";
+  } else if ($age <= 40) {
+    echo "Eres joven";
+  } else if ($age <= 65) {
+    echo "eres maduro";
+  } else {
+    echo "cuidate";
   }
- 
+}
   ?>

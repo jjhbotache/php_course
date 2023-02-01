@@ -69,6 +69,7 @@
   
   $rand_number = rand(1, 2);
   echo ("el numero random es $rand_number");
+  
   ?>
   <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
