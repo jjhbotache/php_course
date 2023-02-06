@@ -70,6 +70,11 @@
   $rand_number = rand(1, 2);
   echo ("el numero random es $rand_number");
   
+  function increment (&$a){
+    $a++;
+  }
+  $number = 5;
+  echo(increment($number));// 6
   ?>
   <script
          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
