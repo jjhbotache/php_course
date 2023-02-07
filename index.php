@@ -68,17 +68,55 @@
   // echo ("La ruta es : ".__DIR__);
   
   $rand_number = rand(1, 2);
-  echo ("el numero random es $rand_number");
+  echo ("el numero random es $rand_number <br>");
   
   function increment (&$a){
     $a++;
   }
   $number = 5;
   echo(increment($number));// 6
+  
+  // esta es una clase Coche
+  class Coche{
+    // estos son los atributos
+    public $ruedas;
+    public $color;
+    public $motor;
+    
+    function __construct(){
+      $this->ruedas = 4;
+      $this->color = "blanco";
+      $this->motor = 1600;
+      echo "me he creado <br>";
+    }
+    function arrancar(){
+      echo "arranque <br>";
+    }
+    function frenar (){
+      echo "frene <br>";
+    }
+  }
+  
+  // aqui se crea una instancia:
+  $carro1 = new Coche();
+  
+  $carro1->arrancar();
+  $carro1->frenar();
+  
+  class Camion extends Coche{
+    function arrancar(){
+      parent::arrancar();
+      echo "arranque siendo un camion";
+    }
+  }
+
+  $camion1 = new Camion();
+  $camion1->arrancar();
+
   ?>
   <script
-         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
          crossorigin="anonymous"
       ></script>
   <script>
