@@ -16,7 +16,7 @@
   <button onclick="leave()" class="my-2 btn btn-primary" type="button">leave</button></br>
   <button onclick="operationsExercise()" class="my-2 btn btn-primary" type="button">Go to the operations exercise</button></br>
   <form action="dbPhp.php" method="post">
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">DB</button>
   </form>
 
 
